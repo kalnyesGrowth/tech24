@@ -8,6 +8,9 @@
 <meta property="og:title" content="Tech24 - Commercial Foodservice Equipment Repair">
 <meta property="og:description" content="Your single source for commercial refrigeration, cooking, beverage and HVAC equipment repair and maintenance.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://kalnyesgrowth.github.io/tech24/">
+<meta property="og:image" content="https://www.mytech24.com/wp-content/uploads/2023/09/Tech24-logo-250x125-1.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Tech24","description":"Commercial foodservice equipment repair, refrigeration, HVAC, and planned maintenance across 50+ metro markets.","url":"https://www.mytech24.com","telephone":"888-774-4950","image":"https://www.mytech24.com/wp-content/uploads/2023/08/logo_300_retina_v2.png","priceRange":"$$","areaServed":"United States","serviceType":["Commercial Foodservice Equipment Repair","Commercial Refrigeration Repair","HVAC Repair","Beverage Equipment Repair","Electrical Repair","Plumbing Repair","Preventive Maintenance"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","bestRating":"5","reviewCount":"500"}}</script>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700,800&f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet">
 <style>
@@ -258,7 +261,8 @@ h4{font-size:var(--text-xl)}
 .faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .faq-item{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);overflow:hidden;transition:var(--transition)}
 .faq-item.open{border-color:rgba(196,30,58,0.3)}
-.faq-question{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-weight:600;font-size:var(--text-base);gap:16px}
+.faq-question{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-weight:600;font-size:var(--text-base);gap:16px;background:none;border:none;color:inherit;width:100%;text-align:left;font-family:inherit}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .faq-question svg{width:20px;height:20px;min-width:20px;color:var(--gray);transition:transform 0.3s ease}
 .faq-item.open .faq-question svg{transform:rotate(45deg);color:var(--red)}
 .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
@@ -418,13 +422,14 @@ h4{font-size:var(--text-xl)}
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <img class="hero-poster" src="https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Commercial kitchen" loading="eager">
-  <video class="hero-video" autoplay muted loop playsinline poster="https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1920">
+  <img class="hero-poster" src="https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Commercial kitchen" loading="eager" fetchpriority="high" width="1920" height="1080">
+  <video class="hero-video" autoplay muted loop playsinline>
     <source src="https://videos.pexels.com/video-files/3768985/3768985-hd_1920_1080_25fps.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">The Service Industry Leader, Nationwide</div>
+    <h1 class="visually-hidden">Tech24 Commercial Foodservice Equipment Repair</h1>
     <img src="https://www.mytech24.com/wp-content/uploads/2023/08/logo_300_retina_v2.png" alt="Tech24" style="height:80px;width:auto;margin:0 auto 20px;filter:brightness(0) invert(1)">
     <p class="hero-sub">Your single source for commercial refrigeration, cooking, beverage, and HVAC equipment repair and maintenance across 50+ metro markets.</p>
     <a href="#contact" class="btn-ghost">
@@ -950,42 +955,42 @@ h4{font-size:var(--text-xl)}
     </div>
     <div class="faq-list">
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           What types of equipment does Tech24 service?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
         <div class="faq-answer"><div class="faq-answer-inner">We service commercial cooking equipment (ovens, fryers, grills, steamers), refrigeration (walk-ins, reach-ins, ice machines), beverage systems, HVAC, and commercial electrical and plumbing systems. We work with nearly all major manufacturers.</div></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           How quickly can a technician arrive?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
         <div class="faq-answer"><div class="faq-answer-inner">Tech24 offers same-day service in most metro markets. Our GPS-equipped technicians are dispatched from the nearest service location with fully stocked parts vans, minimizing downtime for your operation.</div></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           Do you offer preventive maintenance programs?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
         <div class="faq-answer"><div class="faq-answer-inner">Yes. Our planned maintenance programs help you prevent costly breakdowns before they happen. Scheduled inspections, cleaning, and calibration keep your equipment running efficiently and extend its lifespan.</div></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           What is covered under your 90-day guarantee?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
         <div class="faq-answer"><div class="faq-answer-inner">Our guarantee covers both parts and labor for 90 days from the date of repair. If the same issue recurs within that window, we return at no additional charge to resolve it.</div></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           Do you service my area?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
         <div class="faq-answer"><div class="faq-answer-inner">Tech24 operates in 50+ metro markets with 100+ owned locations and a network of 1,600+ service partners covering the Western, Southwest, Midwest, Mid-Atlantic, Northeast, and Southeast regions. Contact us to confirm availability in your area.</div></div>
       </div>
       <div class="faq-item reveal">
-        <div class="faq-question">
+        <button class="faq-question" type="button">
           How do I become a Tech24 service partner?
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </div>
@@ -1009,7 +1014,7 @@ h4{font-size:var(--text-xl)}
       </div>
       <h2>Share Your Experience</h2>
       <p>Had a great service call? Leave us a review on Google and help other businesses find reliable equipment repair.</p>
-      <a href="#" class="btn-solid" target="_blank" rel="noopener">Leave a Google Review</a>
+      <a href="https://www.google.com/search?q=Tech24+commercial+foodservice+repair+reviews" class="btn-solid" target="_blank" rel="noopener">Leave a Google Review</a>
     </div>
   </div>
 </section>
@@ -1047,7 +1052,7 @@ h4{font-size:var(--text-xl)}
           </div>
           <div class="form-group">
             <label for="serviceType">Service Needed</label>
-            <select id="serviceType">
+            <select id="serviceType" required>
               <option value="">Select a service...</option>
               <option>Cooking Equipment Repair</option>
               <option>Refrigeration Repair</option>
@@ -1119,7 +1124,7 @@ h4{font-size:var(--text-xl)}
           <a href="https://www.linkedin.com/company/tech24" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+          <a href="https://www.youtube.com/channel/UCGcT5qHLE5zKIYl-0Zp_t_w" target="_blank" rel="noopener" aria-label="YouTube">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0B1426"/></svg>
           </a>
         </div>
@@ -1253,8 +1258,8 @@ window.addEventListener('scroll',()=>{
   if(scrollPercent>0.5&&!popupState.scroll){popupState.scroll=true;document.getElementById('popupScroll').classList.add('active')}
 });
 
-// Timed popup at 20s
-setTimeout(()=>{if(!popupState.timed){popupState.timed=true;document.getElementById('popupTimed').classList.add('active')}},20000);
+// Timed popup at 20s (skip if another popup is already visible)
+setTimeout(()=>{if(!popupState.timed&&!document.querySelector('.popup-overlay.active')){popupState.timed=true;document.getElementById('popupTimed').classList.add('active')}},20000);
 
 // VIDEO FALLBACK
 const heroVideo=document.querySelector('.hero-video');
